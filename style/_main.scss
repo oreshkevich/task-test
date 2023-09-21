@@ -249,8 +249,11 @@ select {
 }
 .btn {
   text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
 }
 .btn__card {
+  display: block;
   border-radius: 15px;
   background: #37d997;
   color: #fff;
