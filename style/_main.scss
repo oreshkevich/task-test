@@ -1,15 +1,7 @@
 .main {
   background: url(../assets/img/main.jpg) center center/cover no-repeat;
-  &__wrap {
-  }
-
-  // .main__cards
-
-  &__cards {
-  }
 }
-.container {
-}
+
 .card {
   padding-top: 209px;
   padding-bottom: 14px;
@@ -23,7 +15,7 @@
 
   &__item {
     border-radius: 5.677px;
-    padding: 6px 4.1px;
+    padding: 8px;
   }
   &__item span {
     margin: 0;
@@ -31,6 +23,7 @@
   }
   &__item_yellow {
     background: #f19d2f;
+    padding: 8px 0px 8px 8px;
   }
   &__item_green {
     background: #37d997;
@@ -47,6 +40,7 @@
 
   &__timer {
     font-size: 21.254px;
+    width: 104px;
   }
 
   // .card__prise-old
@@ -88,13 +82,6 @@
     text-transform: uppercase;
   }
 
-  // .slippers__wrap
-
-  &__wrap {
-  }
-
-  // .slippers__header
-
   &__header {
     display: flex;
     justify-content: space-between;
@@ -114,8 +101,6 @@
 
   // .slippers__img
 
-  &__img {
-  }
   &__slide-img {
     width: 358px !important;
     height: 232px !important;
@@ -160,8 +145,6 @@
     background: url(../assets/svg/za.svg) center center/cover no-repeat;
   }
 }
-.container {
-}
 .swiper-slide img {
   border-radius: 10px;
 }
@@ -194,6 +177,8 @@
   margin-bottom: 18px;
 }
 .select-color {
+  width: 90%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,21 +201,66 @@
   font-family: 'Gotham Pro';
   font-size: 10px;
   font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 4px;
 }
+
+.select-wrapper {
+  background: #ffffff;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.02);
+  border-radius: 58px;
+  width: 90%;
+}
+.select-wrapper__arrow {
+  position: absolute;
+  top: 37px;
+  right: 20px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='9' fill='none'%3E%3Cpath fill='%232C2B31' fill-rule='evenodd' d='M.325 1.736a1.5 1.5 0 0 1 2.026-.629L9.5 4.87l7.15-3.763a1.5 1.5 0 1 1 1.396 2.655L10.2 7.892a1.5 1.5 0 0 1-1.398 0L.954 3.763a1.5 1.5 0 0 1-.63-2.026Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  width: 19px;
+  min-width: 19px;
+  height: 9px;
+  min-height: 9px;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform 0.24s ease-in-out;
+  z-index: 1;
+}
+
 .select-option {
-  color: #2c2b31;
-  text-align: center;
-  font-family: 'Gotham Pro Bold';
   font-size: 21.69px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  width: 100%;
+  height: 55px;
+  appearance: none;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 58px;
+  border: none;
+  font-family: 'Gotham Pro Bold';
+  color: #2c2b31;
   text-transform: uppercase;
-  border-radius: 10px;
-  width: 170px;
-  height: 50px;
+  padding: 12.5px 30px 13.5px 30px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
+.select-option:focus {
+  outline: none;
+}
+.select-option:focus + .select-wrapper__arrow {
+  transform: rotate(180deg);
+}
+
 .select-size {
+  width: 90%;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
