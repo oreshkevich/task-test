@@ -1,0 +1,127 @@
+@function vw($value, $base: 1920) {
+  @return calc($value / $base * 100vw);
+}
+
+@function vh($value, $base: 1080) {
+  @return calc($value / $base * 100vh);
+}
+
+$baseFontSize: 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return calc($pixels / $context * 1rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  background: #f0f0f0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 14px;
+  line-height: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper > main {
+  flex: 1 1 auto;
+}
+
+.wrapper > * {
+  min-width: 0;
+}
+
+.container {
+  max-width: 1822px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url('../fonts/gothampro_medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url('../fonts/gothampro_bold.woff');
+  font-weight: 700;
+  font-style: normal;
+}
+

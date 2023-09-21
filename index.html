@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script defer src="./dist/main.js"></script>
+  <title>Рем Vольт</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__wrap">
+            <h1 class="header__title">SPECIAL OFFER + FREE DELIVERY 2-4 DAYS IN SA</h1>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-wrap">
+            <div class="header__logo logo">
+              <a href="#" class="logo__link">
+                <img src="./assets/svg/logo.svg" alt="logo" class="logo__img">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main">
+        <div class="container">
+          <div class="main__wrap">
+            <div class="main__cards card">
+              <div class="card__item card__item_yellow">
+                <h4 class="card__title">Limited offer</h4>
+                <div class="card__timer" id="timer">
+                  <span class="hours">18</span>:<span class="minutes">20</span>:<span class="seconds">11</span>
+                </div>
+              </div>
+              <div class="card__item card__item_green">
+                <h4 class="card__prise-old">R 250.00</h4>
+                <div class="card__prise">R 160.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slippers">
+        <div class="container">
+          <div class="slippers__wrap">
+            <div class="slippers__header">
+              <div class="slippers__name">Excellent 4.8/5</div>
+              <div class="slippers__img">
+                <img src="./assets/svg/trustpilot.svg" alt="trustpilot">
+              </div>
+              <a href="#" class="slippers__link">
+                best selling
+              </a>
+            </div>
+            <h2 class="slippers__title">
+              Orthopedic Slippers
+            </h2>
+            <div class="slippers__swiper">
+              <div class="swiper slippers__Swiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide ">
+                    <img alt="black" class="slippers__slide-img" src="./assets/img/b-1.jpg">
+                  </div>
+                  <div class="swiper-slide ">
+                    <img alt="orange" class="slippers__slide-img" src="./assets/img/b-2.jpg">
+                  </div>
+                  <div class="swiper-slide ">
+                    <img alt="pink" class="slippers__slide-img" src="./assets/img/b-3.jpg">
+                  </div>
+                  <div class="swiper-slide ">
+                    <img alt="yellow" class="slippers__slide-img" src="./assets/img/b-4.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper slippers__Swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img alt="black" src="./assets/img/1.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img alt="orange" src="./assets/img/2.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img alt="pink" src="./assets/img/3.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img alt="yellow" src="./assets/img/4.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slippers__wrap-text">
+              <p class="slippers__text">
+                Fast Delivery: <span> 2-4 days from SA </span>
+              </p>
+              <p class="slippers__text">
+                In Stock: <span> Shipping from Johannesburg </span>
+              </p>
+              <div class="star">
+                <div><img class="star__star-wrap-img" src="./assets/svg/stars.svg" alt="star-1"></div>
+                <div><img class="star__star-wrap-img" src="./assets/svg/stars.svg" alt="star-1"></div>
+                <div><img class="star__star-wrap-img" src="./assets/svg/stars.svg" alt="star-1"></div>
+                <div><img class="star__star-wrap-img" src="./assets/svg/stars.svg" alt="star-1"></div>
+                <div><img class="star__star-wrap-img" src="./assets/svg/stars.svg" alt="star-1"></div>
+                <span class="star__count"> (10)</span>
+              </div>
+              <div class="lists">
+                <div class="select-color">
+                  <label class="select-label" for="color-select">color</label>
+                  <select class="select-option" name="colors" id="color-select">
+                    <option value="Black">Black</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Black">Black</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Yellow">Yellow</option>
+                  </select>
+                </div>
+                <div class="select-size">
+                  <label class="select-label" for="select">size</label>
+                  <select class="select-option" name="size" id="select">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="btn"><button data-test-id="booking-button" type="button" class="btn__card">buy now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+
+</html>

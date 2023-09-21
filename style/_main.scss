@@ -1,0 +1,271 @@
+.main {
+  background: url(../assets/img/main.jpg) center center/cover no-repeat;
+  &__wrap {
+  }
+
+  // .main__cards
+
+  &__cards {
+  }
+}
+.container {
+}
+.card {
+  padding-top: 209px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: 'Gotham Pro Bold';
+  font-weight: 700;
+  text-transform: uppercase;
+  // .card__item
+
+  &__item {
+    border-radius: 5.677px;
+    padding: 6px 4.1px;
+  }
+  &__item span {
+    margin: 0;
+    padding: 0;
+  }
+  &__item_yellow {
+    background: #f19d2f;
+  }
+  &__item_green {
+    background: #37d997;
+  }
+
+  // .card__title
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 10.599px;
+  }
+
+  // .card__timer
+
+  &__timer {
+    font-size: 21.254px;
+  }
+
+  // .card__prise-old
+
+  &__prise-old {
+    font-size: 18.077px;
+    position: relative;
+  }
+
+  &__prise-old::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 9px;
+    right: 0;
+    left: 0;
+    width: 89px;
+    height: 3.514px;
+    background: #f19d2f;
+  }
+
+  // .card__prise
+
+  &__prise {
+    font-size: 22.301px;
+  }
+}
+
+.slippers {
+  margin-top: 11px;
+  // .slippers_title
+  &__title {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    color: #2c2b31;
+    font-family: 'Gotham Pro Bold';
+    font-size: 19.168px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  // .slippers__wrap
+
+  &__wrap {
+  }
+
+  // .slippers__header
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+
+  // .slippers__name
+
+  &__name {
+    color: #2c2b31;
+    font-family: 'Gotham Pro';
+    font-size: 12.067px;
+
+    font-weight: 400;
+  }
+
+  // .slippers__img
+
+  &__img {
+  }
+  &__slide-img {
+    width: 358px !important;
+    height: 232px !important;
+    border-radius: 20px !important;
+  }
+
+  // .slippers__link
+
+  &__link {
+    color: #37d997;
+    text-align: right;
+    font-family: 'Gotham Pro';
+    font-size: 12.067px;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+  &__text {
+    color: #000;
+    font-family: 'Gotham Pro Bold';
+    font-size: 15.29px;
+    font-weight: 700;
+    padding-bottom: 12px;
+  }
+  &__wrap-text {
+    margin-top: 17px;
+  }
+  &__text span {
+    font-family: 'Gotham Pro';
+    font-weight: 400;
+    position: relative;
+  }
+
+  &__text span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -27px;
+    top: 0px;
+    width: 21px;
+    height: 12px;
+    border-radius: 1px;
+    background: url(../assets/svg/za.svg) center center/cover no-repeat;
+  }
+}
+.container {
+}
+.swiper-slide img {
+  border-radius: 10px;
+}
+
+.swiper-wrapper {
+  margin-top: 20px;
+}
+.star {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 129px;
+  padding-bottom: 22px;
+  padding-top: 0px;
+  text-align: center;
+  // .star__star-wrap-img
+
+  &__star-wrap-img {
+    margin-right: 4px;
+  }
+  &__count {
+    margin-left: 5px;
+  }
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.select-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__select option {
+    color: #2c2b31;
+    text-align: center;
+    font-family: 'Gotham Pro Bold';
+    font-size: 21.69px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 150px;
+  }
+}
+.select-label {
+  color: #2c2b31;
+  text-align: center;
+  font-family: 'Gotham Pro';
+  font-size: 10px;
+  font-weight: 400;
+}
+.select-option {
+  color: #2c2b31;
+  text-align: center;
+  font-family: 'Gotham Pro Bold';
+  font-size: 21.69px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 170px;
+  height: 50px;
+}
+.select-size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 0 5px;
+  line-height: 36px;
+  height: 36px;
+  box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+
+  width: 150px;
+}
+.btn {
+  text-align: center;
+}
+.btn__card {
+  border-radius: 15px;
+  background: #37d997;
+  color: #fff;
+  text-align: center;
+  font-family: 'Gotham Pro';
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  padding: 12px 23px;
+  width: 100%;
+}
+
+.swiper-slide-thumb-active {
+  border-radius: 10px;
+  opacity: 0.4;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
